@@ -6,6 +6,7 @@ install(
   FILES "FooToInstall.ini"
   DESTINATION bin
   RENAME Foo.ini
+  PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ GROUP_WRITE WORLD_READ WORLD_WRITE
   )
 
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Medical Visualization and Processing Environment for Research")
